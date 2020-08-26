@@ -1,0 +1,23 @@
+
+#footer {
+        background: #1d5199;
+        color: #fff;
+        padding: 40px 10px;
+        text-align: center;
+        }
+#footer .hr-line{
+                width: 60px;
+                height: 5px;
+                display: block;
+                background: #acacac;
+                border-radius: 5px;
+                margin: 20px auto;
+
+        }
+#footer .smart-way-box .box-title{
+                font-size: 14px;
+                margin-top:10px;
+        }
+#footer .smart-way-box .box-info{
+        font-size: 12px;
+}

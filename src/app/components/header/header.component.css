@@ -1,0 +1,8 @@
+nav .navbar-brand{
+    font-size: 20px;
+    color: #0b397d;
+    font-weight: bold;
+}
+nav .navbar-brand > span{
+    color: #ffa32c;
+}

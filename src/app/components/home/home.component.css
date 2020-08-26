@@ -1,0 +1,99 @@
+#home-section{
+    padding: 60px;
+    background: url(../../../assets/stock-photo-doctor-workplace-close-up-316726991.png);
+    background-position: left center;
+    background: url(../../../assets/Layer.png);
+    background-position: right center;
+}
+#home-section .balance-box{
+    width: 60%;
+    position: relative;
+    margin:2% auto;
+    margin-bottom: -70px;
+    background-color: #fff;
+    border-top:2px solid #ffa32c;
+    box-shadow: 2px 2px 4px #ccc;
+
+}
+#home-section .balance-box .home-title-box {
+    border-bottom: 1px solid #ddd;
+   
+}
+#home-section .balance-box .home-title-box .home-title{
+    font-size: 22px;
+    padding:10px;
+    color:#0b397d;
+
+}
+#home-section .balance-box .user-info h2{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 0px;
+
+}
+#home-section .balance-box .user-info p{
+    font-size: 12px;
+}
+#home-section .balance-box .transction-info{
+    background-color: #f8fdff;
+    border: 1px dashed #cbe4ee;
+    text-align: center;
+}
+#home-section .balance-box .transction-info .pay-info{
+    font-size: 12px;
+    padding-top: 10px;
+}
+#home-section .balance-box .transction-links a{
+    font-size: 12px;
+    color:#ffa32c;
+    text-decoration: underline;
+}
+#home-section .balance-box .transction-links .pd-0{
+padding: 0px;
+}
+#home-section .balance-box .transction-links .btn-round{
+    background-color: #2663b8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+#home-section .balance-box .post-title{
+    background-color: #efefef;
+}
+#home-section .balance-box .post-title h4{
+    font-size: 16px;
+    padding: 10px;
+    color: #333;
+}
+#home-section .balance-box .table{
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    display: inline-table;
+}
+#home-section .balance-box .table td{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+#home-section .balance-box .table tr:last-child td{
+    border-bottom: 0px;
+}
+#home-section .balance-box .table td a{
+    color:#ffa32c;
+    text-decoration: underline;    
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #home-section .balance-box{
+        width:100%;
+    }
+    #home-section .balance-box .transction-links .pd-0{
+        text-align: center;
+        padding: 15px;
+    }
+}

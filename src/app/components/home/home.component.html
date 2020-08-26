@@ -1,0 +1,90 @@
+<section id="home-section">
+    <div class="balance-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 home-title-box">
+                    <h1 class="home-title text-center">Current Balance</h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class=" col-sm-12 col-md-6 user-info">
+                    <h2>Patient</h2>
+                    <p>{{patientInfo?.patientName}}</p>
+                    <h2>Practice</h2>
+                    <p>{{patientInfo?.practice}}</p>
+                </div>
+                <div class=" col-sm-12 col-md-6">
+                    <div class="transction-info">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="pay-info">
+                                        {{patientInfo?.totalAmount | currency}}
+                                        <p>Total amount</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="pay-info">
+                                        {{patientInfo?.previouslyPaid | currency}}
+                                       <p>previously Paid</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="pay-info">
+                                        {{patientInfo?.balanceDue | currency}}
+                                        <p>Balance Due</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transction-links mt-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12 pd-0">
+                                    <a href="#">View Statement Details</a>
+                                </div>
+                                <div class="col-md-3 col-sm-12 pd-0">
+                                    <a href="#" class="btn-round">Pay By Card</a>
+                                </div>
+                                <div class="col-md-4 col-sm-12 pd-0">
+                                    <a href="#" class="btn-round">Pay by Check</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-12 post-title">
+                    <h4>Post Transaction</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div>
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Card</th>
+                                <th>Amount</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor = 'let traninfo of patientInfo?.pastTransactions'>
+                                <td>{{traninfo.date}}</td>
+                                <td>{{traninfo.cardNumber}}</td>
+                                <td>{{traninfo.amount | currency}}</td>
+                                <td><a href="#">View Recipt</a></td>
+                            </tr>
+                         
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
